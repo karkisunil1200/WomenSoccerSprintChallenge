@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PlayerList from './component/players/PlayerList';
 
 function App() {
   return (
     <div className='App'>
       <div className='App'>
-        <h1>App component</h1>
+        <PlayerList />
       </div>
     </div>
   );
