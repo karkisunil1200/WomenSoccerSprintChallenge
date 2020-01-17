@@ -1,6 +1,21 @@
 import React from 'react';
 
+import players from '../../hooks/players';
+
 class PlayerList extends React.Component {
+  state = {
+    playerlist: []
+  };
+
+  componentDidMount() {
+    players
+      .get('/players')
+      .then(response => {
+        console.log(response);
+      })
+      .catch();
+  }
+
   render() {
     return (
       <div>
