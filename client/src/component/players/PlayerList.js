@@ -1,17 +1,17 @@
 import React from 'react';
 
 import players from '../../hooks/players';
+import PlayerCard from './PlayerCard';
 
 class PlayerList extends React.Component {
   state = {
-    playerlist: []
+    playerList: []
   };
 
   componentDidMount() {
     players
       .get('/players')
       .then(response => {
-        console.log(response.data);
         this.setState({playerList: response.data});
       })
       .catch();
@@ -19,9 +19,14 @@ class PlayerList extends React.Component {
 
   render() {
     console.log('This is the state: ', this.state.playerList);
+
+    const playerCard = this.state.playerList.map(player => {
+      return <PlayerCard player={player} />;
+    });
+
     return (
       <div>
-        <h1>PlayerList is in the house!!</h1>
+        <h5>Name: {playerCard}</h5>
       </div>
     );
   }
