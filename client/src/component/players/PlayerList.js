@@ -27,7 +27,7 @@ class PlayerList extends React.Component {
     return (
       <div className='player-list'>
         <div className='players'>
-          <h5>Name: {playerCard}</h5>
+          <h5>Names: {playerCard}</h5>
         </div>
       </div>
     );
