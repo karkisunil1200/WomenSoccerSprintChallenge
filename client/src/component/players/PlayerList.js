@@ -3,6 +3,8 @@ import React from 'react';
 import players from '../../hooks/players';
 import PlayerCard from './PlayerCard';
 
+import '../styles/Playerlist.css';
+
 class PlayerList extends React.Component {
   state = {
     playerList: []
@@ -21,7 +23,11 @@ class PlayerList extends React.Component {
     console.log('This is the state: ', this.state.playerList);
 
     const playerCard = this.state.playerList.map(player => {
-      return <PlayerCard player={player} />;
+      return (
+        <div className='player'>
+          <PlayerCard player={player} />
+        </div>
+      );
     });
 
     return (

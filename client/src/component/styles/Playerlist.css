@@ -1,8 +1,24 @@
 .player-list {
-  box-sizing: border-box;
+  background: rgb(252, 70, 4);
+  padding: 20px;
 }
 
 .players {
-  box-shadow: 0 5px 10px rgb(180, 176, 176);
+  box-shadow: 0 5px 10px rgb(124, 123, 123);
   margin: 10px 20px;
+  padding: 30px;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.players h5 {
+  text-align: center;
+}
+
+.player {
+  border: 12px solid yellow;
+  margin: 20px;
 }

@@ -2,13 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 
 import PlayerList from './component/players/PlayerList';
+import './App.css';
 
 function App() {
   return (
-    <div className='App'>
-      <div className='App'>
-        <PlayerList />
-      </div>
+    <div className='app'>
+      <PlayerList />
     </div>
   );
 }
