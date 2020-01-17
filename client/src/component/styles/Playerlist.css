@@ -2,6 +2,10 @@
   background: rgb(252, 70, 4);
   padding: 20px;
 }
+.player-list h2 {
+  color: white;
+  text-align: center;
+}
 
 .players {
   box-shadow: 0 5px 10px rgb(124, 123, 123);
@@ -10,14 +14,10 @@
   background: black;
   color: white;
   display: flex;
-  flex-direction: row;
+
   justify-content: center;
+  flex-wrap: wrap;
 }
-
-.players h5 {
-  text-align: center;
-}
-
 .player {
   border: 12px solid yellow;
   margin: 20px;
